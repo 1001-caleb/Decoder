@@ -1,32 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Secret code</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1 class="titulo">código secreto</h1>
 
-  <main class="main">
-    <section class="form box">
-      <form action="">
-        <label for="input-texto">Solo letras minúsculas, sin acento</label>
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
-        <input class="btn" type="submit" value="encriptar!" id="btn-encriptar">
-        <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar">
-      </form>
+<body>
+  <main class="container">
+    <section class="logo">
+      <a href="#" class="logo__cta">
+        <img src="img/VectorAlura.png" alt="" class="logo__img">
+      </a>
+    </section>
+
+    <section class="form">
+      <div class="form__input">
+        <input type="text" placeholder="Ingrese el texto aqui">
+      </div>
+
+      <div class="alert">
+        <img class="alert__img" src="img/alert.png" alt="">
+        <p class="alert__paragraph">Solo letras minúsculas y sin acentos</p>
+      </div>
+
+      <div class="buttons">
+        <button class="btn">Encriptar</button>
+        <button class="btn">Desencriptar</button>
+      </div>
+
+      <section class="result">
+        <h3 class="result__title">
+          Ningún mensaje fue encontrado
+        </h3>
+        <p class="result__paragraph">
+          Ingresa el texto que desees encriptar o desencriptar
+        </p>
+      </section>
+
     </section>
   
-    <section class="msg box">
-      <h2 id="">Mensaje encriptada:</h2>
-      <input class="text-input" type="text" id="msg"></input>
-      <input class="btn" type="submit" value="copiar" id="btn-copy">
-    </section>
   </main>
+ 
+  
+
 
   <script src="script.js"></script>
 </body>
+
 </html>
