@@ -12,9 +12,26 @@
   --dark-gray: #343A40;
 }
 body {
-  background-color: rgb(201, 198, 198);
+  background-color: #E5E5E5;
   font-family: 'Inter', sans-serif; 
   /* aqui se ponia una medida de 62.5% para usar em y asi 1em seria 10px pero no me acuerdo como se hacia */
+}
+
+.logo{
+  margin: auto;
+  padding-top: 2.5vw;
+  margin-left: 1vh;
+}
+
+.container{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.second{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
