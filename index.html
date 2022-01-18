@@ -12,55 +12,47 @@
 </head>
 
 <body>
-  <!-- contenedor -->
-  <main class="container">
-
-    <!-- logo------------------------------------------------------------------------------------------------- -->
-    <section class="logo">
+  <section class="main container">
+    <div class="logo">
       <a href="#" class="logo__cta">
         <img src="img/VectorAlura.png" alt="" class="logo__img">
       </a>
-    </section>
+    </div>
 
-    <!-- formulario------------------------------------------------------------------------------------------- -->
     <section class="form">
       <div class="form__input">
-        <input type="text" placeholder="Ingrese el texto aqui">
+        <input id="textoAEncriptar" type="text" placeholder="Ingrese el texto aqui">
       </div>
 
-      <!-- parrafo con indicaciones------------------------------------------------------------------------------ -->
-      <section class="footer">
-        <div class="alert">
-          <img class="alert__img" src="img/alert.png" alt="">
-          <p class="alert__paragraph">Solo letras minúsculas y sin acentos</p>
-        </div>
+      <div class="alert">
+        <img class="alert__img" src="img/alert.png" alt="">
+        <p class="alert__paragraph">Solo letras minúsculas y sin acentos</p>
+      </div>
 
-        <!-- botones -->
-        <div class="buttons">
-          <button class="btn encriptar">Encriptar</button>
-          <button class="btn desencriptar">Desencriptar</button>
-        </div>
-      </section>
-
+      <div class="buttons">
+        <button id="btnEncriptar" class="btn encriptar">Encriptar</button>
+        <button id="btnDesencriptar" class="btn desencriptar">Desencriptar</button>
+      </div>
     </section>
+  </section>
 
-    <!-- label del resultador -->
-    <section class="result">
+  <section class="second container">
+    <div class="result">
       <figure class="result__img">
         <img src="img/figure.png" alt="">
       </figure>
+      <h3 id="result__msg" class="result__title">
+        Ningún mensaje fue encontrado
+      </h3>
+      <textarea id="textoEncriptado" class="result__paragraph" name="textarea" rows="10" cols="40"
+        onchange="this.value=this.value.toLowerCase();"
+        placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+    </div>
+  </section>
 
-      <div class="result__texts">
-        <h3 class="result__title">
-          Ningún mensaje fue encontrado
-        </h3>
-        <p class="result__paragraph">
-          Ingresa el texto que desees encriptar o desencriptar
-        </p>
-      </div>
-    </section>
 
-  </main>
+
+
 
 
 
