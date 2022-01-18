@@ -7,45 +7,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Secret code</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/VectorAlura.png" />
+  <meta name="theme-color" content="#0A3871">
 </head>
 
 <body>
+  <!-- contenedor -->
   <main class="container">
+
+    <!-- logo------------------------------------------------------------------------------------------------- -->
     <section class="logo">
       <a href="#" class="logo__cta">
         <img src="img/VectorAlura.png" alt="" class="logo__img">
       </a>
     </section>
 
+    <!-- formulario------------------------------------------------------------------------------------------- -->
     <section class="form">
       <div class="form__input">
         <input type="text" placeholder="Ingrese el texto aqui">
       </div>
 
-      <div class="alert">
-        <img class="alert__img" src="img/alert.png" alt="">
-        <p class="alert__paragraph">Solo letras minúsculas y sin acentos</p>
-      </div>
+      <!-- parrafo con indicaciones------------------------------------------------------------------------------ -->
+      <section class="footer">
+        <div class="alert">
+          <img class="alert__img" src="img/alert.png" alt="">
+          <p class="alert__paragraph">Solo letras minúsculas y sin acentos</p>
+        </div>
 
-      <div class="buttons">
-        <button class="btn">Encriptar</button>
-        <button class="btn">Desencriptar</button>
-      </div>
+        <!-- botones -->
+        <div class="buttons">
+          <button class="btn encriptar">Encriptar</button>
+          <button class="btn desencriptar">Desencriptar</button>
+        </div>
+      </section>
 
-      <section class="result">
+    </section>
+
+    <!-- label del resultador -->
+    <section class="result">
+      <figure class="result__img">
+        <img src="img/figure.png" alt="">
+      </figure>
+
+      <div class="result__texts">
         <h3 class="result__title">
           Ningún mensaje fue encontrado
         </h3>
         <p class="result__paragraph">
           Ingresa el texto que desees encriptar o desencriptar
         </p>
-      </section>
-
+      </div>
     </section>
-  
+
   </main>
- 
-  
+
+
 
 
   <script src="script.js"></script>
