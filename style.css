@@ -32,7 +32,40 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
+
+.form{
+  width: 500px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+input{
+  width: 480px;
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+  background: transparent;
+  border: none;
+  color: var(--dark-blue);
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+}
+
+input::placeholder{
+ 
+  color: var(--dark-blue);
+  font-size: 32px;
+  line-height: 150%;
+  border: none;
+}
+
 
 
 
