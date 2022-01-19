@@ -32,8 +32,8 @@ button.onclick = botonEncriptar;
 function botonDesencriptar(){
     const desencriptar = document.getElementById('textoAEncriptar').value;
     const desencriptado = desencriptar.replace(/(enter)/gi, 'e').replace(/(imes)/gi, 'i').replace(/(ai)/gi, 'a').replace(/(ober)/gi, 'o').replace(/(ufat)/gi, 'u');
-    document.getElementById("textoEncriptado").value = desencriptado
-    document.getElementById("textoAEncriptar").value=" ";
+    document.getElementById("textoEncriptado").value = desencriptado;
+    document.getElementById("textoAEncriptar").value;
 }
 
 var button2 = document.getElementById("btnDesencriptar");
