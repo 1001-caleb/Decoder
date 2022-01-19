@@ -107,6 +107,7 @@ input::placeholder{
   justify-content: center;
   text-align: center; 
   border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px #00000014;
 }
 
 
@@ -132,7 +133,7 @@ textarea{
   height: 100px;
   margin: 0 auto;
   border: none;
-
+  
 }
 
 textarea::placeholder{
