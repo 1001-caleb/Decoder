@@ -12,29 +12,44 @@ No se permite acentuación de palabras
 /* Reglas de desencriptación: 
 lo mismo pero al revés. 
 */
+ function cambiarMensajeResultado(){
+    var msg = document.getElementById("result__msg").innerHTML = "Este es el resultado: ";
+   
+}
 
-// function cambiarMensajeResultado(){
-//     var msg = document.getElementById("result__msg").value;
-//     msg = document.writeln("Este es el resultado: ")
-// }
-
-function botonEncriptar(){
+function botonEncriptar() {
     const encriptar = document.getElementById('textoAEncriptar').value;
     const encriptado = encriptar.replace(/(e)/gi, 'enter').replace(/(i)/gi, 'imes').replace(/(a)/gi, 'ai').replace(/(o)/gi, 'ober').replace(/(u)/gi, 'ufat');
     document.getElementById("textoEncriptado").value = encriptado
-    document.getElementById("textoAEncriptar").value=" ";
-    // cambiarMensajeResultado();
+    document.getElementById("textoAEncriptar").value = " ";
+    cambiarMensajeResultado();
 }
 
 var button = document.getElementById("btnEncriptar");
 button.onclick = botonEncriptar;
 
-function botonDesencriptar(){
+function botonDesencriptar() {
     const desencriptar = document.getElementById('textoAEncriptar').value;
     const desencriptado = desencriptar.replace(/(enter)/gi, 'e').replace(/(imes)/gi, 'i').replace(/(ai)/gi, 'a').replace(/(ober)/gi, 'o').replace(/(ufat)/gi, 'u');
     document.getElementById("textoEncriptado").value = desencriptado;
     document.getElementById("textoAEncriptar").value;
+    cambiarMensajeResultado();
 }
 
 var button2 = document.getElementById("btnDesencriptar");
 button2.onclick = botonDesencriptar;
+
+var copiar = document.getElementById("btnCopiar");
+var texto = document.getElementById("textoEncriptado");
+
+copiar.addEventListener(`click`, async ()  =>{
+   await navigator.clipboard.writeText(texto.value);
+})
+
+var pegar = document.getElementById("btnPegar");
+var pegarEn = document.getElementById("textoAEncriptar");
+
+pegar.addEventListener(`click`, async () =>{
+    const read = await navigator.clipboard.readText()
+    pegarEn.value = read
+})
