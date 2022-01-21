@@ -24,10 +24,10 @@ La funcionalidad completa que tenia que cumplir el programa está en el siguient
 Era un reto opcional seguir el diseño base realizado en figma.
 [<img src='https://img.shields.io/badge/Figma-7289DA?style=for-the-badge&logo=figma&logoColor=white'>](https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?node-id=2%3A213)
 
+![cap-reto1-pc](https://user-images.githubusercontent.com/71718050/150441385-36d9ab0c-3694-4d70-adf6-ba1139a4c4fb.png)
+![cap-reto1-tablet](https://user-images.githubusercontent.com/71718050/150441459-eb85874c-22ce-4c6a-8eb1-8af2bcdd8bde.png)
+![cap-reto1-phone](https://user-images.githubusercontent.com/71718050/150441480-df10ff24-fa4a-4b06-8af7-140160eaf54d.png)
 
-![captura-reto1-pc](https://user-images.githubusercontent.com/71718050/150193007-42891de3-a9a6-47f8-afa9-33e6dbb811b6.png)
-
-![captura-reto1-telefono](https://user-images.githubusercontent.com/71718050/150194028-5675ce3a-0570-4246-9d31-94cb70e6766e.png) ![captura-reto1-tablet](https://user-images.githubusercontent.com/71718050/150194165-611e0722-7412-4277-a734-f1433d3b9ce6.png)
 
 ## Demo del reto
 Aqui podrán probar la funcinalidad.
